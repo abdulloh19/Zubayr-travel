@@ -1,7 +1,11 @@
 const wrapperValeu = document.querySelector(".wrapper");
 
-const pulMiqdori = 8700000;
+const usd = 11000;
+const evro = 13000;
+const ticket = 250;
+const hotel = 500;
 
+const pulMiqdori = usd * hotel + evro * ticket;
 const xarajatlar = +prompt("O'zingizdagi pul miqdorini kiriting");
 
 if (pulMiqdori <= xarajatlar) {
