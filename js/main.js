@@ -10,20 +10,18 @@ const evro = 13000;
 const ticket = 250;
 const hotel = 500;
 
-
-
-const pulMiqdori = usd * hotel + evro * ticket;
-const xarajatlar = +prompt("O'zingizdagi pul miqdorini kiriting");
-
 alert(`
     Mehmonxona xarajati uchun: $${hotel};
     Bilet narhi uchun: $${ticket}
 `)
 
+const pulMiqdori = usd * hotel + evro * ticket;
+const xarajatlar = +prompt("O'zingizdagi pul miqdorini kiriting");
+
 if (pulMiqdori <= xarajatlar) {
-    wrapperValeu.textContent = "Oq yo'l Alisher"
+    wrapperValeu.textContent = "Oq yo'l Zubayr"
 } else {
-    wrapperValeu.textContent = "Alisher ozgina sabr qilish kerak bo'lar ekan"
+    wrapperValeu.textContent = "Zubayr ozgina sabr qilish kerak bo'lar ekan"
 };
 
 
